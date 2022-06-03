@@ -1,29 +1,17 @@
-// // Business Logic
-// function input(name) {
-//   return name;
-// }
-// function input(date) {
-//   return date;
-// }
-// function input(time) {
-//   return time;
-// }
-
 // UI Logic
 
 $(document).ready(function() {
   $("form#appointments").submit(function(event) {
-  
+    event.preventDefault();
       const nameInput= $("input#name").val();
-      const dateInput= $("input#date").val();
-      const timeInput= $("input#time").val();
+      const dateInput= $("input#appointmentDate").val();
+      const timeInput= $("input#appointmentTime").val();
 
       $(".name").text(nameInput);
-      $(".date").date(dateInput);
-      $(".time").select(timeInput);
+      $(".appointmentDate").text(dateInput);
+      $(".appointmentTime").text(timeInput);
 
-      $(#appointmentConfirm).show();
+      $("#appointmentConfirm").show();
       
-    event.preventDefault();
   });
 });
