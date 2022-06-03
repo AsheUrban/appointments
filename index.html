@@ -12,35 +12,35 @@
     <h1>Schedule Your Next Appointment</h1>
 
     <p>We're looking for your name, your desired time and date. Please provide your details below!</p>
+    <div>
+      <form id="appointments">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input id="name" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="appointmentDate">Date of Appointment:</label>
+          <input id="appointmentDate" class="form-control-date" type="date">
+        </div>
+        <div class="form-group">
+          <label for="appointmentTime">Time of Appointment:</label>
+          <select id="appointmentTime">
+            <option value="9:00 am">9:00 am</option>
+            <option value="11:00 am">11:00 am</option>
+            <option value="3:00 am">3:00 pm</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn">Schedule now!</button>
+        </form>
+      </div>
     
-    <form id="appointments">
-      <div class="form-group">
-        <label for="name">Full Name</label>
-        <input id="name" class="form-control" type="text">
-      </div>
-
-      <div class="form-group">
-        <label for="appointmentDate">Date of Appointment:</label>
-        <input id="appointmentDate" class="form-control" type="date">
-      </div>
-
-      <div class="form-group">
-        <label for="appointmentTime">Time of Appointment:</label>
-        <select id="appointmentTime">
-          <option value="9:00 am">9:00 am</option>
-          <option value="11:00 am">11:00 am</option>
-          <option value="3:00 am">3:00 pm</option>
-        </select>
-      </div>
-
-      <botton type="submit" class="btn">Schedule now!</botton>
-      </form>
 
       <div id="appointmentConfirm">
-        <p>$<span id="name"></span>, your appointment is scheduled!</p>
-        
+        <p><span id="name"></span>, your appointment is scheduled!</p>
+
       </div>
-      </div>
+    </div>
 
 </body>
 </html>

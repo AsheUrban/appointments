@@ -13,16 +13,16 @@ function input(time) {
 
 $(document).ready(function() {
   $("form#appointments").submit(function(event) {
-
-    const nameInput= $("input#name").val();
-    const dateInput= $("input#date").val();
-    const timeInput= $("input#time").val();
-
-    $("name").text(nameInput);
-    $("date").date(dateInput);
-    $("time").select(timeInput);
-
     event.preventDefault();
-    $(#appointmentConfirm).show();
+      const nameInput= $("input#name").val();
+      const dateInput= $("input#date").val();
+      const timeInput= $("input#time").val();
+
+      $(".name").text(nameInput);
+      $(".date").date(dateInput);
+      $(".time").select(timeInput);
+
+      $(#appointmentConfirm).show();
+   
   });
 }):
